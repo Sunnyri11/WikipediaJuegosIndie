@@ -1,0 +1,211 @@
+.cabeza {
+    position: sticky;
+    top: 0;
+    background-image: url(pixel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.menu {
+    margin: 0;
+}
+
+.menu_cont {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_link {
+    font-size: 20px;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_link li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.menu_icono {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+h2 {
+    color: #8d8beb;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgba(50, 50, 50, 0.6);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.categorias {
+    display: flex;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(50, 50, 50, 0.6);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.categorias a {
+    color: #CBA6F7;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    max-width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.fondo {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    margin: 1px;
+}
+
+.Sinopsis {
+    font-size: 20px;
+    color: #A0C4FF;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    line-height: 1.6;
+    background-color: rgba(50, 50, 50, 0.6);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.Sinopsis img {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+/*Celulares (pantallas pequeñas) */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 40px; 
+        padding: 10px;
+    }
+
+    .menu_cont {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu_link {
+        flex-direction: column;
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .menu_icono {
+        display: block; 
+    }
+
+    .categorias {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 20px;
+    }
+
+    .item img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .Sinopsis {
+        font-size: 16px;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .Sinopsis img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tabletas (pantallas medianas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h2 {
+        font-size: 70px; 
+    }
+
+    .menu_link {
+        font-size: 18px;
+        gap: 15px;
+    }
+
+    .categorias {
+        flex-wrap: wrap;
+        gap: 30px;
+        font-size: 28px;
+    }
+
+    .item img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .Sinopsis {
+        font-size: 18px;
+        max-width: 90%;
+    }
+
+    .Sinopsis img {
+        width: 150px;
+        height: auto;
+    }
+}

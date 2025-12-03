@@ -1,0 +1,132 @@
+.cabeza {
+    position: sticky;
+    top: 0;
+    background-image: url(../pixel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.menu {
+    margin: 0;
+}
+
+.menu_cont {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_link {
+    font-size: 20px;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_link li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: flex;
+}
+.menu_icono {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.fondo {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    margin: 1px;
+}
+table
+{
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border: none; 
+}
+table th, td
+{    
+    color: #e4eeff;
+    width: 600px;
+    background-color: rgba(50, 50, 50, 0.6);
+    border: 3px solid black;
+}
+.categorias {
+    display: flex;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.categorias a {
+    color: #CBA6F7;
+}
+.nombre {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.descripcion {
+  text-align: left;
+  line-height: 1.5;
+}
+/* Celulares */
+@media (max-width: 600px) {
+    table {
+        display: block;      
+        width: 100%;
+    }
+    table th, table td {
+        width: 100%;          
+        display: block;
+    }
+    table img {
+        width: 100%;          
+        height: auto;
+    }
+}
+
+/*Tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    table th, table td {
+        width: 50%;           
+    }
+    table img {
+        max-width: 100%;
+        height: auto;
+    }
+}

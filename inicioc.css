@@ -1,0 +1,97 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #f0f0f0;
+    background-color: black;
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.codigo {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    height: 320px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.codigo button
+{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+}
+button:hover
+{
+    background-color: rgb(39, 47, 129);
+    cursor: pointer;
+}
+.codigo img
+{
+    width: auto;
+    height: 100px;
+}
+/* 📱 Celulares */
+@media (max-width: 600px) {
+    * { font-size: 20px; }
+    .contenido {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .codigo {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+    .codigo img { height: 80px; }
+    video {
+        object-fit: contain;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+/* 📲 Tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    * { font-size: 30px; }
+    .contenido {
+        gap: 30px;
+        width: 95%;
+    }
+    .codigo {
+        width: 80%;
+        height: auto;
+        padding: 30px;
+    }
+    .codigo img { height: 90px; }
+    video {
+        object-fit: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+}

@@ -1,0 +1,202 @@
+.cabeza {
+    display: flex;
+    top: 0;
+    background-image: url(pixel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu {
+    margin: 0;
+}
+
+.menu_cont {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_link {
+    font-size: 20px;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_link li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.tienda {
+    color: #0f0;
+    padding: 30px;
+    font-family: "Courier New", monospace;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #0f0;
+}
+
+#fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.tienda-item {
+    background-color: black;
+    border: 2px solid #7f729f;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(127, 114, 159, 0.8);
+    text-align: center;
+}
+
+.juego-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tienda-item h3 {
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+.tienda-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tienda-item li {
+    margin: 10px 0;
+}
+
+.tienda-item a {
+    text-decoration: none;
+    color: #0ff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tienda-item a:hover {
+    color: #f00;
+    text-shadow: 0 0 5px #f00;
+}
+
+.logo-tienda {
+    width: 24px;
+    height: 24px;
+}
+/* Celulares */
+@media (max-width: 600px) {
+    .cabeza {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu_cont {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu_link {
+        flex-direction: column;
+        font-size: 16px;
+        gap: 8px;
+    }
+
+    .tienda {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tienda-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+/* Tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cabeza {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .menu_link {
+        font-size: 18px;
+        gap: 12px;
+    }
+
+    .tienda {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tienda-item {
+        width: 45%;
+        margin: 15px auto;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}

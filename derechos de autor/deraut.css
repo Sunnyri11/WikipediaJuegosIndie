@@ -1,0 +1,199 @@
+.cabeza {
+    display: flex;
+    top: 0;
+    background-image: url(pixel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+#fondo
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu {
+    margin: 0;
+}
+
+.menu_cont {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_link {
+    font-size: 20px;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_link li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: flex;
+}
+h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.menu_icono {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.ficha-juego {
+    background-color: #1b0139;
+    color: #f8f8f8;
+    border: 2px solid #7f729f;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 400px;
+    font-family: "Courier New", monospace;
+    box-shadow: 0 0 10px rgba(127, 114, 159, 0.8);
+}
+
+.ficha-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.logo-distribuidor {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.ficha-bio p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.contenidototal
+{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* Celulares */
+@media (max-width: 600px) {
+    .cabeza {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu_cont {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu_link {
+        flex-direction: column;
+        font-size: 16px;
+        gap: 8px;
+    }
+
+    .menu_icono {
+        display: block;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .ficha-juego {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .logo-distribuidor {
+        width: 40px;
+        height: 40px;
+    }
+
+    .ficha-bio p {
+        font-size: 12px;
+    }
+
+    .contenidototal {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cabeza {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .menu_link {
+        font-size: 18px;
+        gap: 12px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 18px;
+    }
+
+    .ficha-juego {
+        width: 45%;
+        margin: 15px auto;
+    }
+
+    .logo-distribuidor {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ficha-bio p {
+        font-size: 13px;
+    }
+
+    .contenidototal {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,217 @@
+.cabeza {
+    display: flex;
+    top: 0;
+    background-image: url(pixel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    text-align: center;
+        font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.menu {
+    margin: 0;
+}
+
+.menu_cont {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_link {
+    font-size: 20px;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_link li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.menu_icono {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+h2 {
+    color: #CCCCCC;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.categorias {
+    display: flex;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.categorias a {
+    color: #CBA6F7;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    max-width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.fondo {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    margin: 1px;
+}
+
+.Sinopsis {
+    font-size: 20px;
+    color: #A0C4FF;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    line-height: 1.6;
+    background-color: rgba(50, 50, 50, 0.6);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.Sinopsis img {
+    float: left;
+    margin-right: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+/* Celulares */
+@media (max-width: 600px) {
+    .cabeza {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu_cont {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu_link {
+        flex-direction: column;
+        font-size: 16px;
+        gap: 8px;
+    }
+
+    .menu_icono {
+        display: block;
+    }
+
+    h2 {
+        font-size: 36px; 
+        margin-bottom: 15px;
+    }
+
+    .categorias {
+        flex-direction: column;
+        font-size: 20px; 
+        gap: 20px;
+    }
+
+    .item img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .Sinopsis {
+        font-size: 16px;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .Sinopsis img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        max-width: 80%;
+    }
+}
+
+/* Tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cabeza {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .menu_link {
+        font-size: 18px;
+        gap: 12px;
+    }
+
+    h2 {
+        font-size: 60px; 
+        margin-bottom: 18px;
+    }
+
+    .categorias {
+        flex-wrap: wrap;
+        font-size: 28px;
+        gap: 25px;
+    }
+
+    .item img {
+        max-width: 120px;
+        height: auto;
+    }
+
+    .Sinopsis {
+        font-size: 18px;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .Sinopsis img {
+        max-width: 40%;
+        margin-right: 15px;
+    }
+}
