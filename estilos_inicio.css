@@ -143,18 +143,24 @@ footer .contenidopie .logop {
 display: flex;
   align-items: center;
 }
-<<<<<<< HEAD
+#paginador {
+    text-align: center;
+    margin-top: 20px;
+}
+#paginador button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#paginador button.active {
+    background-color: #333;
+    color: #fff;
+}
 /* Celulares */
 @media (max-width: 600px) {
     h1 {
         font-size: 32px;
         margin: 10px;
-=======
-/* 📱 Celulares (pantallas pequeñas) */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 40px; /* título más pequeño */
->>>>>>> 2ac2528b7b89fc4f7b72abfcecdd636e9da45527
     }
 
     .menu_cont {
@@ -164,32 +170,18 @@ display: flex;
 
     .menu_link {
         flex-direction: column;
-<<<<<<< HEAD
         font-size: 18px;
         gap: 8px;
     }
 
     .menu_icono {
         display: block;
-=======
-        font-size: 20px;
-        gap: 10px;
-    }
-
-    .menu_icono {
-        display: block; /* aparece el icono de menú en móviles */
->>>>>>> 2ac2528b7b89fc4f7b72abfcecdd636e9da45527
     }
 
     nav {
         flex-direction: column;
-<<<<<<< HEAD
         gap: 15px;
         font-size: 18px;
-=======
-        gap: 20px;
-        font-size: 20px;
->>>>>>> 2ac2528b7b89fc4f7b72abfcecdd636e9da45527
     }
 
     .juegos {
@@ -202,7 +194,6 @@ display: flex;
 
     footer .contenidopie {
         flex-direction: column;
-<<<<<<< HEAD
         gap: 8px;
         font-size: 14px;
         align-items: center;
@@ -233,31 +224,6 @@ display: flex;
 
     .juegos {
         width: 45%;
-=======
-        gap: 10px;
-        font-size: 16px;
-    }
-}
-
-/* 📲 Tabletas (pantallas medianas) */
-@media (min-width: 601px) and (max-width: 1024px) {
-    h1 {
-        font-size: 70px; /* título intermedio */
-    }
-
-    .menu_link {
-        font-size: 24px;
-        gap: 15px;
-    }
-
-    nav {
-        gap: 30px;
-        font-size: 28px;
-    }
-
-    .juegos {
-        width: 45%; /* dos columnas en tabletas */
->>>>>>> 2ac2528b7b89fc4f7b72abfcecdd636e9da45527
     }
 
     .juegos img {
@@ -266,7 +232,6 @@ display: flex;
 
     footer .contenidopie {
         flex-direction: row;
-<<<<<<< HEAD
         font-size: 16px;
         align-items: center;
     }
@@ -276,8 +241,3 @@ display: flex;
         height: 22px;
     }
 }
-=======
-        font-size: 18px;
-    }
-}
->>>>>>> 2ac2528b7b89fc4f7b72abfcecdd636e9da45527
