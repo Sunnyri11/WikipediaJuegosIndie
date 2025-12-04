@@ -169,8 +169,8 @@ display: flex;
 
     .menu_link {
         flex-direction: column;
-        font-size: 7.5px;
-        gap: 4px;
+        font-size: 15px;
+        gap: 8px;
     }
 
     .menu_icono {
