@@ -16,6 +16,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
 }
 .menu {
     margin: 0;
@@ -52,7 +53,7 @@ body {
     cursor: pointer;
 }
 .fondo {
-    position: fixed;
+    position:fixed;
     left: 0;
     width: 100%;
     height: 100%;
@@ -83,6 +84,7 @@ table th, td
     border-radius: 5px;
     width: auto;
     grid-template-columns: repeat(5, 1fr);
+    background-color: rgba(142, 137, 137, 0.6);
     gap: 40px 40px;
     justify-content: center;
     align-items: flex-start;
@@ -93,7 +95,7 @@ table th, td
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .categorias a {
-    color: #CBA6F7;
+    color: #2d0335;
 }
 .nombre {
   text-align: center;
@@ -152,7 +154,11 @@ table th, td
         width: 100%;
         font-size: 16px;
     }
-
+    table img
+    {
+        max-width: 150px;
+        height: auto;
+    }
     .nombre {
         font-size: 24px;
     }
@@ -200,7 +206,11 @@ table th, td
         width: 100%;
         font-size: 20px;
     }
-
+    table img
+    {
+        max-width: 300px;
+        height: auto;
+    }
     .nombre {
         font-size: 32px;
     }

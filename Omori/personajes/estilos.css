@@ -16,6 +16,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
 }
 .menu {
     margin: 0;
@@ -89,11 +90,12 @@ table th, td
     margin: 40px auto;
     padding: 20px;
     box-sizing: border-box;
+    background-color: rgba(145, 122, 173, 0.6);
     font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .categorias a {
-    color: #CBA6F7;
+    color: #1b013a;
 }
 .nombre {
   text-align: center;

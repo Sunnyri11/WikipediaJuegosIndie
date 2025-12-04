@@ -16,6 +16,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
 }
 .menu {
     margin: 0;
@@ -90,10 +91,11 @@ table th, td
     padding: 20px;
     box-sizing: border-box;
     font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .categorias a {
-    color: #CBA6F7;
+    color: #ffffff;
 }
 .nombre {
   text-align: center;
@@ -136,7 +138,11 @@ table th, td
         width: 100%;
         font-size: 16px;
     }
-
+    table img
+    {
+        width: 150px;
+        height: auto;
+    }
     .categorias {
         flex-direction: column;
         font-size: 20px;
@@ -174,7 +180,11 @@ table th, td
         width: 100%;
         font-size: 20px;
     }
-
+    table img
+    {
+        width: 300px;
+        height: auto;
+    }
     .categorias {
         flex-wrap: wrap;
         font-size: 28px;
