@@ -8,8 +8,8 @@
     padding: 40px;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
+    color: white;
 }
-
 #fondo {
     position: fixed;
     top: 0;
@@ -19,7 +19,6 @@
     object-fit: cover;
     z-index: -1;
 }
-
 body {
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,7 +26,6 @@ body {
     background-position: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 .menu {
     margin: 0;
 }
@@ -40,7 +38,13 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
+.menu_titulo {
+  display: none; /* oculto en desktop */
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+}
 .menu_link {
     font-size: 20px;
     display: flex;
@@ -94,17 +98,21 @@ h2 {
     padding: 20px;
     margin: 20px auto;
     width: 500px;
+    height: 550px;
     box-shadow: 0 0 10px rgba(127, 114, 159, 0.8);
     text-align: center;
 }
 
 .juego-cover {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 300px;
     border-radius: 8px;
     margin-bottom: 15px;
 }
-
+.tienda-item img
+{
+    max-height: 300px;
+}
 .tienda-item h3 {
     margin-bottom: 15px;
     color: #ffcc00;
@@ -138,23 +146,62 @@ h2 {
     width: 24px;
     height: 24px;
 }
+.menu_toggle
+{
+    display: none;
+}
 /* Celulares */
 @media (max-width: 600px) {
     .cabeza {
-        flex-direction: column;
+        flex-direction: row; /* título y hamburguesa en la misma fila */
+        justify-content: space-between;
+        align-items: center;
         padding: 20px;
         text-align: center;
     }
 
+    h2 {
+        display: none; /* ocultar título debajo del header */
+    }
+
+    .menu_titulo {
+        display: block; /* mostrar título dentro del header */
+        font-size: 18px;
+        color: white;
+    }
+
     .menu_cont {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu_icono {
+        display: block;
     }
 
     .menu_link {
+        display: none;
         flex-direction: column;
         font-size: 16px;
         gap: 8px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #444; /* fondo gris */
+        padding: 12px;
+        z-index: 999;
+    }
+
+    .menu_link li a {
+        font-size: 16px; /* letras más pequeñas */
+    }
+
+    .menu_toggle:checked ~ .menu_icono + .menu_link {
+        display: flex;
+        align-items: flex-start;
     }
 
     .tienda {
@@ -166,23 +213,52 @@ h2 {
         width: 100%;
         margin: 10px 0;
     }
-
-    h2 {
-        font-size: 24px;
-    }
 }
-
 /* Tabletas */
 @media (min-width: 601px) and (max-width: 1024px) {
     .cabeza {
-        flex-direction: column;
+        flex-direction: row; /* título y hamburguesa en la misma fila */
+        justify-content: space-between;
+        align-items: center;
         padding: 30px;
         text-align: center;
     }
 
+    h2 {
+        display: none; /* ocultar título debajo del header */
+    }
+
+    .menu_titulo {
+        display: block; /* mostrar título dentro del header */
+        font-size: 22px;
+        color: white;
+    }
+
+    .menu_icono {
+        display: block;
+    }
+
     .menu_link {
+        display: none;
+        flex-direction: column;
         font-size: 18px;
         gap: 12px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #444; /* fondo gris */
+        padding: 14px;
+        z-index: 999;
+    }
+
+    .menu_link li a {
+        font-size: 18px; /* letras más pequeñas */
+    }
+
+    .menu_toggle:checked ~ .menu_icono + .menu_link {
+        display: flex;
+        align-items: flex-start;
     }
 
     .tienda {
@@ -195,8 +271,24 @@ h2 {
         width: 45%;
         margin: 15px auto;
     }
+}
+@media (min-width: 1025px) {
+    .menu_icono {
+        display: none; /* ocultar hamburguesa en escritorio */
+    }
+
+    .menu_titulo {
+        display: none; /* ocultar título dentro del header en escritorio */
+    }
+
+    .menu_link {
+        display: flex; /* menú visible en fila */
+        flex-direction: row;
+        gap: 1rem;
+    }
 
     h2 {
-        font-size: 28px;
+        display: block; /* mostrar título grande debajo del header */
+        font-size: 32px; /* o el tamaño que quieras */
     }
 }
