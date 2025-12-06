@@ -63,7 +63,7 @@ body {
     font-weight: bold;
     font-family: 'Press Start 2P', cursive;
     background-color: rgba(64, 45, 45, 0.6);
-    box-shadow: rgba(58, 57, 57, 0.4);
+    box-shadow: rgba(225, 140, 140, 0.4);
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
@@ -81,12 +81,12 @@ body {
     box-sizing: border-box;
     font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgba(145, 122, 173, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     box-shadow: rgba(0, 0, 0, 0.4);
 }
 
 .categorias a {
-    color: #1b013a;
+    color: #ffffff;
 }
 
 .item {

@@ -118,13 +118,13 @@ td {
     font-size: 100px;
     font-weight: bold;
     font-family: 'Press Start 2P', cursive;
-    background-color: rgba(64, 45, 45, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     box-shadow: rgba(58, 57, 57, 0.4);
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
 .categorias a {
-    color: #1b013a;
+    color: #ffffff;
 }
 
 .nombre {

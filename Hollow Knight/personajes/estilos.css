@@ -30,7 +30,7 @@ body {
     font-size: 100px;
     font-weight: bold;
     font-family: 'Press Start 2P', cursive;
-    background-color: rgba(64, 45, 45, 0.6);
+    background-color: rgba(106, 106, 106, 0.6);
     box-shadow: rgba(58, 57, 57, 0.4);
     -webkit-text-stroke: 1px black;
 }
@@ -107,7 +107,7 @@ td {
     margin: 40px auto;
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgba(145, 122, 173, 0.6);
+    background-color: rgba(106, 106, 106, 0.6);
     font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -118,13 +118,13 @@ td {
     font-size: 100px;
     font-weight: bold;
     font-family: 'Press Start 2P', cursive;
-    background-color: rgba(64, 45, 45, 0.6);
+    background-color: rgba(106, 106, 106, 0.6);
     box-shadow: rgba(58, 57, 57, 0.4);
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
 .categorias a {
-    color: #1b013a;
+    color: #000000;
 }
 
 .nombre {
