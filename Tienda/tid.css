@@ -208,10 +208,21 @@ h2 {
         flex-direction: column;
         gap: 20px;
     }
-
+    
     .tienda-item {
-        width: 100%;
+        width: 50%;
+        height: 50%;
         margin: 10px 0;
+    }
+    .juego-cover
+    {
+        width: 100px;
+        height: 100px;
+    }
+    .logo-tienda
+    {
+        width: 20px;
+        height: 20px;
     }
 }
 /* Tabletas */
@@ -272,6 +283,7 @@ h2 {
         margin: 15px auto;
     }
 }
+/* Escritorio */
 @media (min-width: 1025px) {
     .menu_icono {
         display: none; /* ocultar hamburguesa en escritorio */
@@ -286,7 +298,7 @@ h2 {
         flex-direction: row;
         gap: 1rem;
     }
-
+    
     h2 {
         display: block; /* mostrar título grande debajo del header */
         font-size: 32px; /* o el tamaño que quieras */

@@ -8,11 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <header class="cabeza">
         <div class="Inicio">
             <nav class="menu">
                 <div class="menu_cont">
+                    <!-- Menú principal completo (visible en escritorio) -->
                     <ul class="menu_link">
                         <li><a href="../../Wiki_Juegos_Indie.html">Inicio</a></li>
                         <li><a href="../../derechos de autor/deaut.html">Derechos de autor</a></li>
@@ -21,7 +23,34 @@
                 </div>
             </nav>
         </div>
+        <!-- Barra superior para móviles/tablets -->
+        <div class="barra-superior">
+            <!-- Hamburguesa izquierda -->
+            <div class="menu_principal">
+                <input type="checkbox" id="toggle-main" class="menu_toggle">
+                <label for="toggle-main" class="menu_icono">M.P.&#9776;</label>
+                <ul class="menu_link">
+                    <li><a href="../../Wiki_Juegos_Indie.html">Inicio</a></li>
+                    <li><a href="../../derechos de autor/deaut.html">Derechos de autor</a></li>
+                    <li><a href="../../Tienda/tienda.html">Tiendas</a></li>
+                </ul>
+            </div>
+            <!-- Título en el centro -->
+            <h2 class="barra_sup">Omori</h2>
+            <!-- Hamburguesa derecha -->
+            <div class="menu_secundario">
+                <input type="checkbox" id="toggle-sec" class="menu_toggle">
+                <label for="toggle-sec" class="menu_icono">M.S.&#9776;</label>
+                <ul class="menu_link">
+                    <li><a href="../finales/finales.html">Finales</a></li>
+                    <li><a href="../Omori.html">Inicio</a></li>
+                    <li><a href="../mundo/mundo.html">Mundo</a></li>
+                    <li><a href="../reglasjuego/rjuego.html">Reglas de Juego</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
+    <h2 class="TituloJuego">Personajes</h2>
     <div class="decoracion">
         <video src="../Omori.webm" autoplay muted loop class="fondo"></video>
         <audio src="../OMORI - Duet (slowed with reverb).mp3" autoplay loop></audio>
@@ -35,7 +64,7 @@
     <table class="personajes" border="1">
         <tr>
             <th>Personaje</th>
-            <th>Foto</th>
+            <th class="ocultar">Foto</th>
         </tr>
         <tr>
             <td>
@@ -156,22 +185,25 @@
                 <img src="headspace.jpeg " alt="Nop">
             </td>
         </tr>
-                <tr>
+        <tr>
             <td>
                 <div class="nombre">SpaceBoyFriend</div>
                 <div class="descripcion">
-                    Es el personaje principal del manga favorito de Sunny, en el headspace es pareja de Sweetheart, sin embargo su relacion es muy toxica y queda en una depresión profunda cuando terminan. 
+                    Es el personaje principal del manga favorito de Sunny, en el headspace es pareja de Sweetheart, sin
+                    embargo su relacion es muy toxica y queda en una depresión profunda cuando terminan.
                 </div>
             </td>
             <td>
                 <img src="spaceboyfriend.jfif" alt="Nop" height="350px">>
             </td>
         </tr>
-                <tr>
+        <tr>
             <td>
                 <div class="nombre">Sweetheart</div>
                 <div class="descripcion">
-                    La más popular de todo el Headspace, es la novia de SpaceBoyFriend. Es una chica muy vanidosa y superficial que solo se preocupa por su apariencia y popularidad, aunque en el fondo anhela ser amada y aceptada por los demás.
+                    La más popular de todo el Headspace, es la novia de SpaceBoyFriend. Es una chica muy vanidosa y
+                    superficial que solo se preocupa por su apariencia y popularidad, aunque en el fondo anhela ser
+                    amada y aceptada por los demás.
                 </div>
             </td>
             <td>
@@ -180,4 +212,5 @@
         </tr>
     </table>
 </body>
+
 </html>

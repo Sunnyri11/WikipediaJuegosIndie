@@ -14,6 +14,7 @@
         <div class="Inicio">
             <nav class="menu">
                 <div class="menu_cont">
+                    <!-- Menú principal completo (visible en escritorio) -->
                     <ul class="menu_link">
                         <li><a href="../../Wiki_Juegos_Indie.html">Inicio</a></li>
                         <li><a href="../../derechos de autor/deaut.html">Derechos de autor</a></li>
@@ -21,6 +22,32 @@
                     </ul>
                 </div>
             </nav>
+        </div>
+        <!-- Barra superior para móviles/tablets -->
+        <div class="barra-superior">
+            <!-- Hamburguesa izquierda -->
+            <div class="menu_principal">
+                <input type="checkbox" id="toggle-main" class="menu_toggle">
+                <label for="toggle-main" class="menu_icono">M.P.&#9776;</label>
+                <ul class="menu_link">
+                    <li><a href="../../Wiki_Juegos_Indie.html">Inicio</a></li>
+                    <li><a href="../../derechos de autor/deaut.html">Derechos de autor</a></li>
+                    <li><a href="../../Tienda/tienda.html">Tiendas</a></li>
+                </ul>
+            </div>
+            <!-- Título en el centro -->
+            <h2 class="barra_sup">Omori</h2>
+            <!-- Hamburguesa derecha -->
+            <div class="menu_secundario">
+                <input type="checkbox" id="toggle-sec" class="menu_toggle">
+                <label for="toggle-sec" class="menu_icono">M.S.&#9776;</label>
+                <ul class="menu_link">
+                    <li><a href="../finales/finales.html">Finales</a></li>
+                    <li><a href="../personajes/personajes.html">Personajes</a></li>
+                    <li><a href="../Omori.html">Inicio</a></li>
+                    <li><a href="../reglasjuego/rjuego.html">Reglas de Juego</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <div class="decoracion">
@@ -36,7 +63,7 @@
     <table class="personajes" border="1">
         <tr>
             <th>Mundo</th>
-            <th>Foto</th>
+            <th class="ocultar">Foto</th>
         </tr>
         <tr>
             <td>
@@ -138,14 +165,15 @@
                 </div>
             </td>
             <td>
-                <img src="blackspace.jfif" alt="Nop" width="500px" >
+                <img src="blackspace.jfif" alt="Nop" width="500px">
             </td>
         </tr>
         <tr>
             <td>
                 <div class="nombre">Dueto Final</div>
                 <div class="descripcion">
-                    El ultimo desafio de Sunny, ya no hay vuelta atras, por fin Sunny tocara esa ultima dueto junto a Mari. Fue un largo viaje ¿no?. 
+                    El ultimo desafio de Sunny, ya no hay vuelta atras, por fin Sunny tocara esa ultima dueto junto a
+                    Mari. Fue un largo viaje ¿no?.
                 </div>
             </td>
             <td>
@@ -156,7 +184,8 @@
             <td>
                 <div class="nombre">Hospital</div>
                 <div class="descripcion">
-                    Tus decisiones te llevaron hasta aca, Sunny ¿Seras capaz de perdonarte a ti mismo y enfrentar la realidad? ¿O seguiras huyendo de la realidad? 
+                    Tus decisiones te llevaron hasta aca, Sunny ¿Seras capaz de perdonarte a ti mismo y enfrentar la
+                    realidad? ¿O seguiras huyendo de la realidad?
                 </div>
             </td>
             <td>

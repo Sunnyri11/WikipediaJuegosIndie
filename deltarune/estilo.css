@@ -8,6 +8,7 @@
     padding: 40px;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
+    color: white;
 }
 
 body {
@@ -55,13 +56,15 @@ body {
     cursor: pointer;
 }
 
-h2 {
-    color: #fffdfd;
+.TituloJuego{
+    color: #ffffff;
     text-align: center;
     font-size: 100px;
     font-weight: bold;
     font-family: 'Press Start 2P', cursive;
-    -webkit-text-stroke: 1px black;
+    background-color: rgba(64, 45, 45, 0.6);
+    box-shadow: rgba(58, 57, 57, 0.4);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
 .categorias {
@@ -77,12 +80,13 @@ h2 {
     padding: 20px;
     box-sizing: border-box;
     font-size: 40px;
-    background-color: rgba(0, 0, 0, 0.6);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(145, 122, 173, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.4);
 }
 
 .categorias a {
-    color: #ffffff;
+    color: #1b013a;
 }
 
 .item {
@@ -115,22 +119,67 @@ h2 {
     padding: 20px;
     max-width: 800px;
     line-height: 1.6;
-    background-color: rgba(13, 13, 13, 0.6);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    background-color: rgba(11, 11, 11, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 }
 
 .Sinopsis img {
     float: left;
     margin-right: 20px;
+    height: 250px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
-/* Celulares */
+
+/* --- Ajustes para barra superior --- */
+.barra-superior {
+    display: none;
+    /* Oculta en escritorio */
+}
+
+.barra_sup {
+    display: none;
+    /* Título móvil/tablet oculto en escritorio */
+}
+
+/* Escritorio (pantallas grandes) */
+@media (min-width: 1025px) {
+    .menu_icono {
+        display: none;
+        /* oculta hamburguesas */
+    }
+
+    .menu_link {
+        display: flex;
+        /* menús completos visibles */
+        flex-direction: row;
+        gap: 1rem;
+    }
+    h2 {
+        display: block;
+        /* título grande */
+    }
+    .categorias {
+        display: flex;
+        /* menú secundario completo */
+    }
+
+    .barra-superior {
+        display: none;
+        /* oculta barra superior */
+    }
+
+    .barra_sup {
+        display: none;
+        /* oculta título móvil */
+    }
+}
+
+/* Celulares (pantallas pequeñas) */
 @media (max-width: 600px) {
-    .cabeza {
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
+    .barra_sup {
+        font-size: 40px;
+        padding: 10px;
     }
 
     .menu_cont {
@@ -141,22 +190,21 @@ h2 {
     .menu_link {
         flex-direction: column;
         font-size: 16px;
-        gap: 8px;
+        gap: 10px;
+        color: white;
     }
 
     .menu_icono {
         display: block;
+        font-size: 15px;
     }
-
-    h2 {
-        font-size: 36px;
-        margin-bottom: 15px;
+    .menu_link a
+    {
+        color: white;
     }
-
     .categorias {
-        flex-direction: column;
-        font-size: 20px;
-        gap: 20px;
+        display: none;
+        /* oculta menú secundario completo */
     }
 
     .item img {
@@ -166,41 +214,78 @@ h2 {
 
     .Sinopsis {
         font-size: 16px;
-        padding: 15px;
+        max-width: 50%;
         margin: 20px auto;
     }
 
     .Sinopsis img {
         float: none;
         display: block;
-        margin: 0 auto 15px auto;
-        max-width: 80%;
-        height: 75px;
+        margin: 0 auto 20px auto;
+        height: 120px;
     }
-}
 
-/* Tabletas */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .cabeza {
-        flex-direction: column;
-        padding: 30px;
-        text-align: center;
+    .barra-superior {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .barra_sup {
+        display: block;
+        margin: 0;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: 'Press Start 2P', cursive;
     }
 
     .menu_link {
-        font-size: 18px;
-        gap: 12px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #444;
+        padding: 12px;
+        z-index: 999;
+        color: white;
     }
 
-    h2 {
-        font-size: 60px;
-        margin-bottom: 18px;
+    .menu_toggle:checked~.menu_icono+.menu_link {
+        display: flex;
     }
 
+    .menu_toggle {
+        display: none;
+    }
+    .TituloJuego
+    {
+        display: none;
+    }
+}
+
+/* Tabletas (pantallas medianas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .barra_sup {
+        font-size: 40px;
+    }
+
+    .menu_link {
+        font-size: 14px;
+        gap: 15px;
+        color: white;
+    }
+    .menu_link a
+    {
+        color: white;
+        text-decoration: none;
+    }
     .categorias {
-        flex-wrap: wrap;
-        font-size: 28px;
-        gap: 25px;
+        display: none;
+        /* oculta menú secundario completo */
     }
 
     .item img {
@@ -210,13 +295,58 @@ h2 {
 
     .Sinopsis {
         font-size: 18px;
-        padding: 20px;
-        margin: 30px auto;
+        max-width: 90%;
     }
 
     .Sinopsis img {
-        max-width: 40%;
-        margin-right: 15px;
-        height: 130px;
+        height: 120px;
+    }
+
+    .barra-superior {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .barra_sup {
+        display: block;
+        margin: 0;
+        font-size: 25px;
+        color: #ffffff;
+        font-family: 'Press Start 2P', cursive;
+        color: white;
+        gap: 15px;
+    }
+
+    .menu_icono {
+        display: block;
+        /* mostrar hamburguesas */
+    }
+
+    .menu_link {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 50%;
+        background: #444;
+        padding: 14px;
+        z-index: 999;
+        color: white;
+    }
+
+    .menu_toggle:checked~.menu_icono+.menu_link {
+        display: flex;
+    }
+
+    .menu_toggle {
+        display: none;
+    }
+        .TituloJuego
+    {
+        display: none;
     }
 }

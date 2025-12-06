@@ -10,19 +10,47 @@
 </head>
 
 <body>
-    <header class="cabeza">
-        <div class="Inicio">
-            <nav class="menu">
-                <div class="menu_cont">                    <label for="burger" class="menu_icono">&#9776;</label>
-                    <ul class="menu_link">
-                        <li><a href="../../Wiki_Juegos_Indie.html">Inicio</a></li>
-                        <li><a href="../../derechos de autor/deaut.html">Derechos de autor</a></li>
-                        <li><a href="../../Tienda/tienda.html">Tiendas</a></li>
-                    </ul>
-                </div>
-            </nav>
+<header class="cabeza">
+    <div class="Inicio">
+      <nav class="menu">
+        <div class="menu_cont">
+          <!-- Menú principal completo (visible en escritorio) -->
+          <ul class="menu_link">
+            <li><a href="../../Wiki_Juegos_Indie.html">Inicio</a></li>
+            <li><a href="../../derechos de autor/deaut.html">Derechos de autor</a></li>
+            <li><a href="../../Tienda/tienda.html">Tiendas</a></li>
+          </ul>
         </div>
-    </header>
+      </nav>
+    </div>
+    <!-- Barra superior para móviles/tablets -->
+    <div class="barra-superior">
+      <!-- Hamburguesa izquierda -->
+      <div class="menu_principal">
+        <input type="checkbox" id="toggle-main" class="menu_toggle">
+        <label for="toggle-main" class="menu_icono">M.P.&#9776;</label>
+        <ul class="menu_link">
+          <li><a href="../../Wiki_Juegos_Indie.html">Inicio</a></li>
+          <li><a href="../../derechos de autor/deaut.html">Derechos de autor</a></li>
+          <li><a href="../../Tienda/tienda.html">Tiendas</a></li>
+        </ul>
+      </div>
+      <!-- Título en el centro -->
+      <h2 class="barra_sup">Rutas</h2>
+      <!-- Hamburguesa derecha -->
+      <div class="menu_secundario">
+        <input type="checkbox" id="toggle-sec" class="menu_toggle">
+        <label for="toggle-sec" class="menu_icono">M.S.&#9776;</label>
+        <ul class="menu_link">
+          <li><a href="../Omori.html">Inicio</a></li>
+          <li><a href="../personajes/personajes.html">Personajes</a></li>
+          <li><a href="../mundo/mundo.html">Mundo</a></li>
+          <li><a href="../reglasjuego/rjuego.html">Reglas de juego</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+    <h2 class="TituloJuego">Finales</h2>
     <div class="decoracion">
         <video src="../Omori.webm" autoplay muted loop class="fondo"></video>
         <audio src="../OMORI - Duet (slowed with reverb).mp3" autoplay loop></audio>
