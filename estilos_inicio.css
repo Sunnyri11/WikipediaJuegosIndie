@@ -217,6 +217,13 @@ footer .contenidopie .logop {
     display: flex;
     align-items: flex-start;
   }
+  footer .contenidopie {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 0;
+  color: white;
+  font-size: 10px;
+}
 }
 
 /* Tabletas */
