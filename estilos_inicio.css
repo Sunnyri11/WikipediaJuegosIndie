@@ -110,12 +110,17 @@ nav {
   display: flex;
   flex-direction: column;
 }
-
+.juegos:hover{
+    box-shadow: 0 0 20px #f00;
+}
 .juegos img {
   width: 100%;
   height: 450px;
 }
-
+.menu_link a:hover  {
+    color: black;
+    text-shadow: 0 0 5px #f00;
+}
 .titulo {
   display: flex;
   font-size: 24px;

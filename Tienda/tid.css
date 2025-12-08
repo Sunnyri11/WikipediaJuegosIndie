@@ -117,7 +117,10 @@ h2 {
     margin-bottom: 15px;
     color: #ffcc00;
 }
-
+.tienda-item:hover
+{
+    box-shadow: 0 0 20px rgb(48, 33, 212);
+}
 .tienda-item ul {
     list-style: none;
     padding: 0;
@@ -136,7 +139,10 @@ h2 {
     gap: 10px;
     justify-content: center;
 }
-
+.menu_link a:hover  {
+    color: black;
+    text-shadow: 0 0 5px #f00;
+}
 .tienda-item a:hover {
     color: #f00;
     text-shadow: 0 0 5px #f00;

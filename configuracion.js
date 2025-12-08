@@ -2,7 +2,7 @@
     document.querySelectorAll('.oculto').forEach(el => {
       el.classList.remove('oculto');
     });
-  }, 10000);
+  }, 2100);
 document.addEventListener("DOMContentLoaded", () => {
   const fichas = [...document.querySelectorAll("#contenedor-juegos .juegos")];
   const porPagina = 6;
