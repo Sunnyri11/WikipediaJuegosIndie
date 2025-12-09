@@ -33,7 +33,10 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
+.categorias a:hover
+{   color: black;
+    text-shadow: 0 0 5px #f00;
+}
 .menu_link {
     font-size: 20px;
     display: flex;

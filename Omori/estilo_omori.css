@@ -84,7 +84,10 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: rgba(0, 0, 0, 0.4);
 }
-
+.categorias a:hover
+{   color: black;
+    text-shadow: 0 0 5px #f00;
+}
 .categorias a {
     color: #ffffff;
 }

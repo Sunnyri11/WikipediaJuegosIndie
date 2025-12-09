@@ -138,7 +138,10 @@ td {
     display: none;
     /* Título móvil/tablet oculto en escritorio */
 }
-
+.categorias a:hover
+{   color: black;
+    text-shadow: 0 0 5px #f00;
+}
 /* Escritorio (pantallas grandes) */
 @media (min-width: 1025px) {
     .menu_icono {

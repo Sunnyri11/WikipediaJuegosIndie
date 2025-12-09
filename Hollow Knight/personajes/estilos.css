@@ -40,7 +40,10 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.categorias a:hover
+{   color: black;
+    text-shadow: 0 0 5px #f00;
+}
 .menu_link li a {
     text-decoration: none;
     color: white;

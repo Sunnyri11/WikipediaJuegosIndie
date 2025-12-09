@@ -88,7 +88,10 @@ body {
 .categorias a {
     color: #ffffff;
 }
-
+.categorias a:hover
+{   color: black;
+    text-shadow: 0 0 5px #f00;
+}
 .item {
     display: flex;
     flex-direction: column;

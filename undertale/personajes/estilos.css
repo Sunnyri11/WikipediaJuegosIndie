@@ -115,7 +115,10 @@ td {
 .categorias a {
     color: #000000;
 }
-
+.categorias a:hover
+{   color: black;
+    text-shadow: 0 0 5px #f00;
+}
 .nombre {
     text-align: center;
     font-weight: bold;

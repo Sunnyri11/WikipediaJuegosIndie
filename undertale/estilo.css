@@ -55,7 +55,10 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
 }
-
+.categorias a:hover
+{   color: black;
+    text-shadow: 0 0 5px #f00;
+}
 .TituloJuego{
     color: #ff0000;
     text-align: center;

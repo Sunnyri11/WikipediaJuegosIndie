@@ -94,7 +94,10 @@ td {
     background-color: rgba(50, 50, 50, 0.6);
     border: 3px solid black;
 }
-
+.categorias a:hover
+{   color: black;
+    text-shadow: 0 0 5px #f00;
+}
 .categorias {
     display: flex;
     border: 5px solid black;
